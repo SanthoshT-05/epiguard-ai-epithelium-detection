@@ -1,23 +1,23 @@
-# 🧠 DermaBot - Skin Disease Detection & FAQ Chatbot
+# 🧠 **EPIGAURD AI - Epithelium Detection** - Skin Disease Detection & FAQ Chatbot
 
-**DermaBot** adalah aplikasi web berbasis kecerdasan buatan (AI) yang dirancang untuk membantu deteksi penyakit kulit dari gambar serta menyediakan chatbot edukatif untuk menjawab pertanyaan seputar kesehatan kulit.
+**EPIGAURD AI** is an AI-powered web application designed to help detect epithelium-related skin diseases from images and provide an educational chatbot to answer common questions related to skin health.
 
-Aplikasi ini dibangun menggunakan model **MobileNetV2** untuk klasifikasi gambar dan **difflib** untuk chatbot berbasis text similarity dan rule-based.
+This app is built using the **MobileNetV2** model for image classification and **difflib** for a text similarity and rule-based chatbot.
 
 ---
 
-## 📌 Fitur Utama
+## 📌 Key Features
 
-- 🔍 **Deteksi Penyakit Kulit**: Prediksi 7 jenis penyakit kulit dari gambar.
-- 💬 **Chatbot Edukasi**: Jawaban otomatis untuk pertanyaan umum seputar kulit.
-- 📊 **Evaluasi Model**: Akurasi validasi hingga **74%**, visualisasi metrik lengkap.
-- 🌐 **Web App Interaktif**: Dibangun dengan Streamlit, sangat user friendly.
+* 🔍 **Skin Disease Detection**: Predicts 7 types of skin diseases from images.
+* 💬 **Educational Chatbot**: Automatically answers common questions about skin health.
+* 📊 **Model Evaluation**: Validation accuracy up to **74%**, with full metric visualization.
+* 🌐 **Interactive Web App**: Built with Streamlit, highly user-friendly.
 
 ---
 
 ## 📁 Dataset
 
-Dataset yang digunakan adalah **HAM10000** (Human Against Machine with 10000 training images), free di Kaggle:
+The dataset used is **HAM10000** (Human Against Machine with 10,000 training images), available for free on Kaggle:
 
 🔗 [HAM10000 - Kaggle](https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000)
 
@@ -25,81 +25,74 @@ Dataset yang digunakan adalah **HAM10000** (Human Against Machine with 10000 tra
 
 ## ⚙️ Tech Stack
 
-| Komponen        | Teknologi yang Digunakan                |
-|-----------------|------------------------------------------|
-| Model Deteksi   | TensorFlow, Keras, MobileNetV2           |
-| Dataset         | HAM10000 (Kaggle)                        |
-| Preprocessing   | NumPy, PIL, OpenCV                       |
-| Evaluasi        | Scikit-learn, Matplotlib, Seaborn        |
-| Web App         | Streamlit                                |
-| Chatbot         | difflib (SequenceMatcher)                |
-| Deployment      | Lokal / Streamlit Cloud                  |
-| Version Control | Git, GitHub                              |
+| Component       | Technologies Used                 |
+| --------------- | --------------------------------- |
+| Detection Model | TensorFlow, Keras, MobileNetV2    |
+| Dataset         | HAM10000 (Kaggle)                 |
+| Preprocessing   | NumPy, PIL, OpenCV                |
+| Evaluation      | Scikit-learn, Matplotlib, Seaborn |
+| Web App         | Streamlit                         |
+| Chatbot         | difflib (SequenceMatcher)         |
+| Deployment      | Local / Streamlit Cloud           |
+| Version Control | Git, GitHub                       |
 
 ---
 
-## 🚀 Cara Menjalankan
+## 🚀 How to Run
 
-### 1. Clone Repository
+### 1. Clone the Repository
+
 ```bash
 git clone https://github.com/Nanaacaw/skin_disease_prediction.git
 cd skin_disease_prediction
 ```
 
 ### 2. Install Dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Jalankan Aplikasi
+### 3. Run the App
+
 ```bash
 streamlit run streamlit_app.py
 ```
 
 ---
 
-## 🧪 Evaluasi Model
+## 🧪 Model Evaluation
 
-- Akurasi validasi: **74%**
-- Visualisasi training:
-  - Kurva Akurasi & Loss
-  - Classification Report
-  - Confusion Matrix
+* Validation accuracy: **74%**
+* Training visualizations:
+
+  * Accuracy & Loss Curves
+  * Classification Report
+  * Confusion Matrix
 
 ---
 
-## 🗂️ Struktur Folder
+## 🗂️ Folder Structure
 
 ```
 SKIN_DISEASE_DETECTION/
-├── assets/                       # Asset tambahan (gambar, icon, dll)
-├── data/                         # Data & file pendukung
-│   ├── images/                   # Folder untuk gambar input (download dataset terlebih dahulu)
-│   ├── faq-chatbot-skin.json     # Data chatbot FAQ
-│   └── HAM10000_metadata.csv     # Metadata dari dataset HAM10000
+├── assets/                       # Additional assets (images, icons, etc.)
+├── data/                         # Supporting data & files
+│   ├── images/                   # Input image folder (download dataset first)
+│   ├── faq-chatbot-skin.json     # FAQ chatbot data
+│   └── HAM10000_metadata.csv     # HAM10000 dataset metadata
 ├── models/
-│   └── skin_model_final_3.keras  # Model CNN hasil training
-├── notebooks/                    # Notebook untuk eksplorasi dan training
+│   └── skin_model_final_3.keras  # Trained CNN model
+├── notebooks/                    # Notebooks for exploration and training
 │   ├── training.ipynb
 │   └── training_fix.ipynb
-├── streamlit_app.py              # Aplikasi utama berbasis Streamlit
-├── requirement.txt               # Daftar library yang dibutuhkan
+├── streamlit_app.py              # Main Streamlit web application
+├── requirement.txt               # Required libraries
 └── .gitignore
 ```
 
 ---
 
-## 📖 Lisensi
+## 📖 License
 
-Proyek ini dilisensikan di bawah MIT License - silakan gunakan, modifikasi, dan kembangkan untuk kepentingan edukasi dan penelitian.
-
----
-
-## 📫 Contact Me
-
-If you have any suggestions or feedback, please don't hesitate to contact to me in direct message on ::
-
-- 📧 Email: [awnana123@gmail.com](mailto:awnana123@gmail.com)
-- 💼 LinkedIn: [https://linkedin.com/in/nana-caw](https://linkedin.com/in/nana-caw)
-
-
+This project is licensed under the MIT License — feel free to use, modify, and expand it for educational or research purposes.
